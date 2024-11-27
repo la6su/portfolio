@@ -1,0 +1,49 @@
+{
+  "sheetsById": {
+    "Scene": {
+      "staticOverrides": {
+        "byObject": {
+          "Camera": {}
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 1,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Camera": {
+            "trackData": {
+              "3Gg3N1eZvS": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Camera:[\"distance\"]",
+                "keyframes": [
+                  {
+                    "id": "o8p1e3cPy8",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [0.5, 1, 0.5, 0],
+                    "type": "bezier",
+                    "value": 3
+                  },
+                  {
+                    "id": "SA_xZTaBt8",
+                    "position": 0.5,
+                    "connectedRight": true,
+                    "handles": [0.5, 1, 0.5, 0],
+                    "type": "bezier",
+                    "value": 4.8
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"distance\"]": "3Gg3N1eZvS"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": ["4E5oQthJjcyad2wN"]
+}

@@ -1,0 +1,133 @@
+header {
+  padding-top: 20px;
+}
+
+.left-radius {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.right-radius {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#bottom-block {
+  display: block !important;
+}
+.navButtons {
+  position: relative;
+  z-index: 1;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 260px;
+}
+.avatar-pic {
+  right: 0;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.avatar-pic img {
+  border-radius: 8px;
+  pointer-events: none;
+}
+.navButtons .uk-button.active .avatar-pic {
+  z-index: 1;
+}
+.navButtons:hover .uk-button.active .avatar-pic {
+  visibility: hidden;
+}
+
+.tm-navbar-container {
+  pointer-events: none;
+}
+.navButtons .uk-button-link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.85rem;
+}
+.navButtons .uk-button.active {
+  font-weight: bold;
+}
+.uk-button-text:hover {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.navButtons .uk-button.active::before {
+  content: '';
+  display: list-item;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin-bottom: -1.5em;
+  background-image: url('@/assets/list-bullet.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.25));
+}
+.nostroke {
+  -webkit-text-fill-color: #fff;
+  filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.5));
+  -webkit-text-stroke: 0;
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.button-styled {
+  align-items: center;
+  background: #2688eb;
+  border: 0;
+  box-shadow:
+    -10px -10px 30px 0 rgba(255, 255, 255, 0.2),
+    10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #f5f5fa;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: left;
+  transition: 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+  pointer-events: all;
+}
+
+.button-styled:hover {
+  background: #07f;
+  color: #fff;
+  box-shadow:
+    -5px -5px 24px 0 rgba(255, 255, 255, 0.3),
+    6px 6px 24px 0 #1d0dca17;
+}
+
+@media (max-height: 820px) {
+  .navButtons .uk-button-link {
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 0.64rem;
+  }
+}
+@media (max-width: 640px) {
+  .navButtons {
+    display: none;
+  }
+}
